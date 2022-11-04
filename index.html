@@ -9,25 +9,42 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <nav>
+        <h1 class="h1">TIC TAC AND TOE.....</h1>
+         <ul>
+             <li>About</li>
+
+         </ul>
+    </nav>
+    <div class="main">
     <table>
         <tr>
-            <td id="a"  onclick="pressButton('a')"></td>
-            <td id="b"  onclick="pressButton('b')"></td>
-            <td id="c"  onclick="pressButton('c')"></td>
+            <td class="red"    id="a"   onclick="pressButton('a')"></td>
+            <td class="red"    id="b"  onclick="pressButton('b')"></td>
+            <td class="red"   id="c"  onclick="pressButton('c')"></td>
         </tr>
 
         <tr>
-            <td id="d"  onclick="pressButton('d')"></td>
-            <td id="e"  onclick="pressButton('e')"></td>
-            <td id="f"  onclick="pressButton('f')"></td>
+            <td class="red"   id="d"  onclick="pressButton('d')"></td>
+            <td class="red"   id="e"  onclick="pressButton('e')"></td>
+            <td class="red"    id="f"  onclick="pressButton('f')"></td>
         </tr>
 
         <tr>
-            <td id="g"  onclick="pressButton('g')"></td>
-            <td id="h"  onclick="pressButton('h')"></td>
-            <td id="i"  onclick="pressButton('i')"></td>
+            <td class="red"   id="g"  onclick="pressButton('g')"></td>
+            <td class="red"    id="h"  onclick="pressButton('h')"></td>
+            <td class="red"    id="i"  onclick="pressButton('i')"></td>
         </tr>
     </table>
-    <button class="reload" onclick="reload()">Reset</button>
+    <div class="container">
+    <div class="win"> <div id="X">X:0</div><div id="O">O:0</div> <div id="tie">T:0</div></div>
+
+        <div id="display">Turn for X</div>
+
+    <button class="reload" onclick="reload()">Reset</button></div>
+    </div>
+    <footer>
+          RudrakshiPadole
+    </footer>
 </body>
 </html>
